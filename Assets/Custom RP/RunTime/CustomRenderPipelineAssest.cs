@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-namespace Custom_RP.Camera
+namespace Custom_RP.RunTime
 {
     using UnityEngine ;
     using UnityEngine.Rendering ;
@@ -8,11 +8,13 @@ namespace Custom_RP.Camera
     [CreateAssetMenu(menuName = "Rendering/Custom Render Pipeline")]
     public class CustomRenderPipelineAssest : RenderPipelineAsset
     {
-    protected override RenderPipeline CreatePipeline()
-    {
-        return new CustomRenderPipeline();
+        protected override RenderPipeline CreatePipeline()
+        {
+            return new CustomRenderPipeline();
+        }
     }
-}}
+    
+}
 
 
 
